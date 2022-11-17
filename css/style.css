@@ -340,7 +340,7 @@ h6,
     overflow: hidden;
 }
 
-.portfolio-inner::before,
+/* .portfolio-inner::before,
 .portfolio-inner::after {
     position: absolute;
     content: "";
@@ -350,7 +350,7 @@ h6,
     left: 0;
     background: rgba(15, 66, 41, .6);
     transition: .5s;
-}
+} */
 
 .portfolio-inner::after {
     left: auto;
@@ -377,10 +377,10 @@ h6,
     opacity: 0;
 }
 
-.portfolio-inner:hover .portfolio-text {
+/* .portfolio-inner:hover .portfolio-text {
     transition-delay: .3s;
     opacity: 1;
-}
+} */
 
 .portfolio-inner .portfolio-text .btn {
     background: var(--light);
@@ -518,3 +518,156 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+/**********************************/
+/************ FAQs CSS ************/
+/**********************************/
+#faqs {
+    position: relative;
+    padding: 90px 0;
+}
+
+#faqs .card {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 0;
+}
+
+#faqs .card:last-child {
+    margin-bottom: 0;
+}
+
+#faqs .card-header {
+    padding: 0;
+    border: none;
+}
+
+#faqs .card-header span {
+    display: block;
+    float: left;
+    width: 50px;
+    height: inherit;
+    margin-right: 10px;
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+    background: var(--primary);
+}
+
+#faqs .card-header a {
+    display: block;
+    float: right;
+    width: calc(100% - 65px);
+    padding: 15px 0;
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#faqs .card-header [data-toggle="collapse"]:after {
+    font-family: 'font Awesome 5 Free';
+    content: "\f067";
+    float: right;
+    margin-right: 15px;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 900;
+    transition: .3s;
+}
+
+#faqs .card-header [data-toggle="collapse"][aria-expanded="true"]:after {
+    font-family: 'font Awesome 5 Free';
+    content: "\f068";
+    float: right;
+    margin-right: 15px;
+    color: var(--light);
+    font-size: 14px;
+    font-weight: 900;
+    transition: .3s;
+}
+
+#faqs .card-body {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, .03) rgba(0, 0, 0, .05) rgba(0, 0, 0, .05) rgba(0, 0, 0, .05);
+}
+
+#faqs .contact-info {
+    position: relative;
+    width: 100%;
+}
+
+#faqs .contact-info h2 {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#faqs .contact-info p {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#faqs .contact-info h3 {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#faqs .contact-info h3 i {
+    width: 20px;
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+#faqs .contact-info a {
+    margin: 10px 0 15px 0;
+    font-size: 18px;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+#faqs .contact-info a:hover {
+    color: #ffffff;
+    background: var(--primary);
+}
+
+#faqs .social {
+    position: relative;
+    width: 100%;
+}
+
+#faqs .social a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    width: 40px;
+    height: 40px;
+    padding: 3px 0;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+}
+
+#faqs .social a i {
+    color: var(--primary);
+}
+
+#faqs .social a:hover {
+    background: var(--primary);
+}
+
+#faqs .social a:hover i {
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    #faqs .contact-info {
+        margin-top: 45px;
+    }
+}
+
